@@ -12,10 +12,12 @@ function Homeimg() {
           i'm a <span></span>
         </h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-          numquam dolores dolorem adipisci recusandae, ex nesciunt. Voluptatum
-          voluptates quasi tempora hic facilis veritatis consequuntur doloribus
-          dolor provident 
+        Hello,
+        There is no limit in passion.You can find my skills 
+        in almost any tech department.Started from c++ passing 
+        throug Web Developer, IoT, Mechatronics to Video production 
+        and 3d Graphics.Just send your inquiry to start 
+        as soon as possible
         </p>
 
         <div className="social-icons">
