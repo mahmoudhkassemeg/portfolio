@@ -15,7 +15,7 @@ function Homeimg() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
           numquam dolores dolorem adipisci recusandae, ex nesciunt. Voluptatum
           voluptates quasi tempora hic facilis veritatis consequuntur doloribus
-          dolor provident, eligendi nam? Modi?
+          dolor provident 
         </p>
 
         <div className="social-icons">
