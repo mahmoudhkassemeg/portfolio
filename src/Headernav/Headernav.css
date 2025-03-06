@@ -1,0 +1,25 @@
+.main{
+    display: flex;
+    height: 30px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    
+}
+
+nav a:hover,
+nav a.active{
+    color: var(--maincolor);
+    border-bottom: 2px solid var(--maincolor);
+}
+nav{
+    margin-right: 4rem;
+}
+nav a{
+    color: white;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}

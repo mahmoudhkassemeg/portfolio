@@ -1,0 +1,58 @@
+
+
+.Menu{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 30px;
+    transition: 0.3s ease;
+}
+.menuBar{
+    width: 35px;
+    height: 5px;
+    background-color: var(--foreground);
+    margin: 6px 0;
+}
+
+.Menu:hover{
+    transform: scale(1.1)translateY(-5px);
+    cursor: pointer;
+    box-shadow: 0 0 35px var(--imgshadow);
+}
+.Menu:hover  .menu-content{
+    display: block;
+}
+.menu-content{
+    display: none;
+    flex-direction: column;
+    position: relative;
+    
+}
+.menu-container{
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 253, 250,0.12);
+    width: 6rem;
+    height: 11rem;
+    border: 1px solid rgb(170, 255, 0);
+    margin-top: 0;
+    z-index: 1;
+}
+.menu-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.menu-home,.menu-services,
+.menu-contact,.menu-inquiry{
+    top: 0;
+    margin-top: -1rem;
+    z-index: 2;
+}
+.menu-home,.menu-services,
+.menu-contact{
+    border-bottom: 1px solid var(--maincolor);
+}

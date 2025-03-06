@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import React from "react";
+import Headernav from './Headernav/Headernav.js';
+import Menu from './Menu/Menu'
+import Homeimg from './Components/Homeimg/Homeimg.js';
+function Home(){
+  return(
+    <body>
+    <header>
+      <div className='headermain'>
+        
+       <div className='logoName'><a>Mahmoud <span>Hassan</span></a></div>
+      
+      <Menu />
+      </div>
+    </header>
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <section className='home'>
+      <Homeimg />
+    </section>
 
-export default App;
+    
+    </body>
+  )
+} export default Home;
