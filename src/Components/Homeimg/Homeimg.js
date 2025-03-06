@@ -13,11 +13,11 @@ function Homeimg() {
         </h3>
         <p>
         Hello,
-        There is no limit in passion.You can find my skills 
-        in almost any tech department.Started from c++ passing 
-        throug Web Developer, IoT, Mechatronics to Video production 
-        and 3d Graphics.Just send your inquiry to start 
-        as soon as possible
+        There is no limit in passion.
+        You can find my skills in almost any tech department.
+        Started from c++ passing throug Web Developer, IoT, 
+        Mechatronics to Video production and 3d Graphics.
+        Just send your inquiry to start as soon as possible
         </p>
 
         <div className="social-icons">
