@@ -64,8 +64,17 @@ section{
   box-sizing: border-box;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 600px) {
   body{
     width: 350px;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 1280px) {
+  body{
+    margin: auto;
+    width: 100vw;
+    height: 100vw;
   }
 }
