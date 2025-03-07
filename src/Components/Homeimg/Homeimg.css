@@ -6,19 +6,20 @@
     
 } 
 .home-content{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    /* grid-template-columns: auto auto;
     grid-template-rows: auto;
     grid-template-areas: 
     "h1 h1"
     "h3 span"
     "p img"
     "social social"
-    "btn btn";
+    "btn btn"; */
     flex-direction: column;
     align-items: baseline;
     text-align: left;
     justify-content: center;
+    width: 90%;
 }
 .home-content h3{
     grid-area: h3;
@@ -34,7 +35,7 @@
     line-height: 1;
 }
 .home-img{
-    width: 35vw;
+    width: 50%;
     border-radius: 50%;
 }
 .home-img img{
@@ -82,7 +83,9 @@
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.5;
+    width: 70%;
     max-width: 1000px;
+
 }
 
 .social-icons a{
@@ -226,29 +229,14 @@
 }
 
 
-@media (max-width:600px){
-    .home-content p{
-        margin: auto;
-        font-size: 1rem;
+@media only screen and (max-width:500px){
+    .home-content p,h1,h3{
+        width: 100%;
     }
-
-    .home-content{
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "h1"
-        "h3"
-        "p"
-        "social"
-        "btn";
-    
-    }
-    .home-content h3{
-        margin: auto;
-        font-size: 1rem;
-    }
-    .home-content h1{
-        margin: auto;
-        font-size: 1.2rem;
 }
+
+@media only screen and (max-width:800){
+    .home-content p,h1,h3{
+        width: 70%;
+    }
 }
