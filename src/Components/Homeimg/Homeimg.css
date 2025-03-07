@@ -7,16 +7,8 @@
 } 
 .home-content{
     display: flex;
-    /* grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "h1 h1"
-    "h3 span"
-    "p img"
-    "social social"
-    "btn btn"; */
     flex-direction: column;
-    align-items: baseline;
+    align-items: inherit;
     text-align: left;
     justify-content: center;
     width: 90%;
@@ -229,9 +221,9 @@
 }
 
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:400px){
     .home-content p,h1,h3{
-        width: 100%;
+        width: 50%;
     }
 }
 
