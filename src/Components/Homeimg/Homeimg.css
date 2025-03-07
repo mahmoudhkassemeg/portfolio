@@ -6,18 +6,28 @@
     
 } 
 .home-content{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "h1 h1"
+    "h3 span"
+    "p img"
+    "social social"
+    "btn btn";
     flex-direction: column;
     align-items: baseline;
     text-align: left;
     justify-content: center;
 }
 .home-content h3{
+    grid-area: h3;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 2.5rem;
 }
 .home-content h1{
+    grid-area: h1;
     font-size: 3rem;
     font-weight: 800;
     margin-top: .1rem;
@@ -27,6 +37,7 @@
     border-radius: 50%;
 }
 .home-img img{
+    grid-area: img;
     width: 22vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--imgshadow);
@@ -58,7 +69,14 @@
     
     
 }
+.social-icons{
+    grid-area: social;
+}
+.span{
+    grid-area: span;
+}
 .home-content p{
+    grid-area: p;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.5;
@@ -107,6 +125,7 @@
     box-shadow: 0 0 25px var(--maincolor);
 }
 .btn-group{
+    grid-area: btn;
     display: flex;
     align-items: center;
     gap: 1.5rem;

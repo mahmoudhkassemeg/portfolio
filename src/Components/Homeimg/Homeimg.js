@@ -1,17 +1,21 @@
 import './Homeimg.css'
 import logo from './img/img.jpg'
+import  'boxicons';
 
 function Homeimg() {
+  
   return (
+    
     <div className="homeImgMain">
+      
       <div className="home-content">
-        <h1>
+        <h1 className='h1'>
           Hi it's<span> Mahmoud</span>
         </h1>
         <h3 className="text-animation">
-          i'm a <span></span>
+          i'm a <span className='span'></span>
         </h3>
-        <p>
+        <p className='p'>
         Hello,
         There is no limit in passion.
         You can find my skills in almost any tech department.
