@@ -34,6 +34,7 @@
     line-height: 1;
 }
 .home-img{
+    width: 35vw;
     border-radius: 50%;
 }
 .home-img img{
@@ -77,6 +78,7 @@
 }
 .home-content p{
     grid-area: p;
+    width: 45vw;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.5;
