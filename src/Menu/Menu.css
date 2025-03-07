@@ -1,11 +1,15 @@
 
 
-.Menu{
+ .Menu{
     display: block;
     flex-direction: column;
     justify-content: center;
     margin: 30px 30px;
     transition: 0.3s ease;
+}
+.main-menu{
+    width: 100px;
+    height: 5px;
 }
 .menuBar{
     width: 35px;
@@ -14,18 +18,21 @@
     margin: 6px 0;
 }
 
-.Menu:hover{
+.main-menu .Menu:hover{
     transform: scale(1.1)translateY(-5px);
     cursor: pointer;
     box-shadow: 0 0 35px var(--imgshadow);
 }
-.Menu:hover  .menu-content{
-    display: block;
+.main-menu:hover  .menu-content {
+    visibility: visible;
+    transform: scale(1.1)translateY(-9px)translateX(-20px);
 }
 .menu-content{
-    display: none;
+    visibility: hidden;
     flex-direction: column;
     position: relative;
+    transition: 0.5s ease-in-out;
+    
     
 }
 .menu-container{
@@ -45,6 +52,26 @@
     justify-content: center;
     align-items: center;
 
+}
+#menu-items{
+    height: 11.5rem;
+}
+#menu-items a{
+    text-decoration: none;
+    color: var(--foreground);
+    transition: 0.3s ease-in-out;
+}
+#item a:hover{
+    color: var(--maincolor);
+    border-bottom: 2px solid var(--maincolor);
+    box-shadow: 0 0 25px black ;
+}
+#item{
+    height: fit-content;
+    width: fit-content;
+}
+#item:hover{
+    cursor: pointer;
 }
 .menu-home,.menu-services,
 .menu-contact,.menu-inquiry{
