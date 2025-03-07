@@ -21,10 +21,10 @@ function Homeimg() {
         </p>
 
         <div className="social-icons">
-          <a href="#"><i class='bx bxl-linkedin' ></i></a>
-          <a href="#"><i class='bx bxl-github' ></i></a>
-          <a href="#"><i class='bx bxl-instagram' ></i></a>
-          <a href="#"><i class='bx bxl-twitter' ></i></a>
+          <a href="#"><i className='bx bxl-linkedin' ></i></a>
+          <a href="#"><i className='bx bxl-github' ></i></a>
+          <a href="#"><i className='bx bxl-instagram' ></i></a>
+          <a href="#"><i className='bx bxl-twitter' ></i></a>
         </div>
 
         <div className="btn-group">
