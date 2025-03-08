@@ -235,7 +235,7 @@
 
 @media only screen and (max-width:1200px){
     .home-img{
-        
+        min-width: 50vw;
     }
     .homeImgMain{
         display: grid;
@@ -255,6 +255,9 @@
     .social-icons a{
         width: 3rem;
         height: 3rem;
+    }
+    .home-content{
+        min-width: 100vw;
     }
 }
 
