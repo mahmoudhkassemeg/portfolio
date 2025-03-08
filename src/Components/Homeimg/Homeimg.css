@@ -18,7 +18,7 @@
     "p img"
     "social social"
     "btn-group btn-group";
-
+    min-width: 50vw;
     /* display: flex;
     flex-direction: column;
     text-align: left;
