@@ -10,14 +10,15 @@
     
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 10% 10% 25% 25% 10%;
     grid-template-areas: 
     "h1 h1"
     "h3 h3"
     "p img"
     "social social"
     "btn-group btn-group";
+    
 
     /* display: flex;
     flex-direction: column;
@@ -77,6 +78,7 @@
 }
 .social-icons{
     grid-area: social;
+    
 }
 .span{
     grid-area: span;
@@ -235,29 +237,47 @@
 
 @media only screen and (max-width:1200px){
     .home-img{
+        display: flex;
+        justify-content: left;
+        align-items: center;
 
     }
     .homeImgMain{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        
+    }
+    .home-content{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto 1fr auto auto;
         grid-template-areas: 
         "h1"
-        "h3"
         "img"
+        "h3"
         "p"
         "social"
         "btn-group";
+        
     }
     .home-content p,.home-content h1, .home-content h3{
         font-size: calc(80%);
     }
     .social-icons a{
-        width: 3rem;
-        height: 3rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
-    .home-content{
-
+    .btn{
+        padding: 0.5rem 1rem;
+    }
+    .home-content p{
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        width: 60%;
+        height: fit-content;
     }
 }
 
