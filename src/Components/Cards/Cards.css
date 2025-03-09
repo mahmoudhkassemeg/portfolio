@@ -60,7 +60,9 @@
     filter: blur(1.5rem);
     opacity: 0.75;
 }
-
+.description{
+    text-align: center;
+}
 @keyframes spin{
     from{
         --angle: 0deg
@@ -73,7 +75,14 @@
    
 }
 .card-content:hover{
+
     box-shadow: 0 0 35px var(--maincolor);
+    cursor: pointer;
+
+
+}
+.card-content:hover p:nth-of-type(2){
+    color: var(--imgshadow);
 }
 .card-content p{
     font-size: 1rem;

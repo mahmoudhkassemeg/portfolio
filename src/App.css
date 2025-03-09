@@ -18,7 +18,7 @@ body{
   background-color: var(--background);
   color: var(--foreground);
   box-sizing: border-box;
-  /* overflow: hidden; */
+  overflow: hidden;
   
 }
 .headermain{
