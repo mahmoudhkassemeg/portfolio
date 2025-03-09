@@ -27,7 +27,7 @@ function Home() {
       <header>
         <div className="headermain">
           <div className="logoName">
-            <a> Mahmoud <span>Hassan</span></a>
+            <a href="#Home"> Mahmoud <span>Hassan</span></a>
           </div>
 
           <Menu />
