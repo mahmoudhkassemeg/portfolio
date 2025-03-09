@@ -20,11 +20,7 @@
     "btn-group btn-group";
     
 
-    /* display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: center;
-    width: 90%; */
+   
 }
 .home-content h3{
     grid-area: h3;
