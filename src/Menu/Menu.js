@@ -1,6 +1,7 @@
 import React from "react";
 import "./Menu.css";
-
+import App from '../App'
+import { link } from 'react-router-dom'
 function Menu() {
   function Mouseover() {}
   function Mouseout() {}
@@ -16,10 +17,10 @@ function Menu() {
         <div id="menu-container" className="menu-container"></div>
         <div id="menu-items" className="menu-items">
           <div id="item" className="menu-home">
-            <h4><a href="#">Home</a></h4>
+            <h4><a href={App.id='#Home'}>Home</a></h4>
           </div>
           <div id="item" className="menu-services">
-            <h4><a href="#">Services</a></h4>
+            <h4><a href={App.id='#services'}>Services</a></h4>
           </div>
           <div id="item" className="menu-contact">
             <h4><a href="#">Contact</a></h4>

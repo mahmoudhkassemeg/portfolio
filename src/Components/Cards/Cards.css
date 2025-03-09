@@ -1,0 +1,93 @@
+.card-content{
+    color: var(--foreground);
+}
+
+/* .card-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "cardone cardtwo cardthree";
+    
+} 
+.card-one{
+    grid-area: cardone;
+}
+.card-two{
+    grid-area: cardtwo;
+}
+.card-three{
+    grid-area: cardthree;
+} */
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+.card-content{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(47, 47, 47);
+    border-radius: 10%;
+    width: 18rem;
+    height: 100%;
+    box-shadow: 0 0 5px var(--maincolor);
+    transition: 0.3s ease-in-out;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.card-content::after,.card-content::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    z-index: -1;
+    border-radius: 25px;
+    background: conic-gradient(from var(--angle),transparent 10%, var(--foreground),transparent 60%, var(--maincolor));
+    animation: 5s spin linear infinite;
+}
+.card-content::before{
+    filter: blur(1.5rem);
+    opacity: 0.75;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg
+    }
+    to{
+        --angle: 360deg
+    }
+}
+.card-content::before{
+   
+}
+.card-content:hover{
+    box-shadow: 0 0 35px var(--maincolor);
+}
+.card-content p{
+    font-size: 1rem;
+    max-width: 200px;
+    max-height: fit-content;
+}
+
+@media only screen and (max-width:1200){
+    .card-content{
+        width: 100%;
+    }
+    .card-content p{
+        font-size: .5rem;
+        width: 100px;
+    }
+
+}

@@ -1,6 +1,11 @@
+import { FaX, FaXTwitter } from "react-icons/fa6";
 import "./Homeimg.css";
 import logo from "./img/img.jpg";
-import "boxicons";
+import 'boxicons';
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { AiOutlineInstagram } from "react-icons/ai";
+import { LiaLinkedinIn } from "react-icons/lia";
+
 
 function Homeimg() {
   return (
@@ -20,17 +25,17 @@ function Homeimg() {
         </p>
 
         <div className="social-icons">
-          <a href="#">
-            <i className="bx bxl-linkedin"></i>
+          <a href="https://www.linkedin.com/in/mahmoudkassemeg" target="_blank">
+          <LiaLinkedinIn />
           </a>
-          <a href="#">
-            <i className="bx bxl-github"></i>
+          <a href="https://github.com/mahmoudhkassemeg/" target="_blank">
+            <FaGithub/>
           </a>
-          <a href="#">
-            <i className="bx bxl-instagram"></i>
+          <a href="https://www.instagram.com/mahmoud_kassemeg" target="_blank">
+          <AiOutlineInstagram />
           </a>
-          <a href="#">
-            <i className="bx bxl-twitter"></i>
+          <a href="https://x.com/mahmoudkasssem" target="_blank">
+            <FaXTwitter/>
           </a>
         </div>
 
